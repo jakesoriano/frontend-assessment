@@ -14,7 +14,6 @@ defineProps({
             :imageUrl="item.image"
             :description="item.content"
             buttonText="Read more"
-            @onBtnClickCallback="onBtnClick"
         />
         <h3 v-else>No data.</h3>
     </div>

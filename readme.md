@@ -1,40 +1,50 @@
-Introduction
----
-Thanks for taking the time to complete this frontend technical assessment. We will be focusing on software quality (scalability, readability, maintainability, etc.) and your eye for detail. You may include any libraries, but Vue.js is preferred and jQuery is not recommended. Along with following best practices, bonus points for following our [coding guidelines](https://github.com/mindarc/frontend-assessment/wiki/Coding-guidelines). 
+# MindArc's Frontend Assessment
 
-Exercise 1
----
-Build a responsive page based on the designs.
 
-##### Requirements
-1. Match the designs exactly.
-2. Needs to be responsive.
+## Run Locally
 
-##### Designs
-* exercise1-desktop.png
-* exercise1-mobile.png
+Clone the project
 
-##### Assets
-* Desktop banner - https://via.placeholder.com/1920x650
-* Mobile banner - https://via.placeholder.com/600x600
-* Content images - https://via.placeholder.com/400x300
+```bash
+  git clone https://github.com/jakesoriano/frontend-assessment.git
+```
 
-Exercise 2
----
-Read the `data.json` file and display the data as tabs on desktop and an accordion on mobile.
+Go to the project directory
 
-##### Requirements
-1. Display data in tabs on desktop.
-2. Display data in an accordion on mobile.
-3. Only 1 accordion/tab should be open at a time.
-4. Open the first accordion/tab on load.
-5. If the open accordion is selected, close it.
+```bash
+  cd excercices
+```
 
-###### Bonus points
-* Improve the user experience with meaningful animations/transitions.
-* Design and styling.
-* Explain why the result of `('b' + 'a' + + 'a' + 'a').toLowerCase()` is `banana`.
+Install dependencies
 
-Submission
----
-We recommend submitting your completed assessment as a forked repository. Please replace README content with instructions and relevant documentation.
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
+
+## Demo
+
+### Exercise 1
+Desktop
+![Demo](https://i.ibb.co/qkXMTBj/chrome-capture-2023-11-17.gif)
+
+Mobile
+![Demo](https://i.ibb.co/5LY9VMF/chrome-capture-2023-11-17-1.gif)
+
+### Exercise 2
+
+![Demo](https://i.ibb.co/CswQD2D/chrome-capture-2023-11-17-2.gif)
+
+## Explain why the result of `('b' + 'a' + + 'a' + 'a').toLowerCase()` is `banana`
+
+1. `'b' + 'a'` = ba
+2. `+ + 'a` = NaN (Not-a-Number) - tries to convert 'a' string to a number
+3. `'ba' + 'NaN'` = baNaN
+4. `'baNaN' + 'a'` = baNaNa
+5. `baNaNa.toLowerCase()` = banana

@@ -20,7 +20,7 @@ const setActiveTab = (index) => {
 </script>
 <template>
     <div class="tabs row m-auto">
-        <div class="tabs-group col-12 col-md-4 px-sm-0">
+        <div class="tabs-group col-12 col-md-4 px-0">
             <div v-for="(item, index) in tabsData"
                 :class="`tabs-group__item py-3 py-md-0 d-flex flex-column flex-md-row justify-content-center align-items-md-center w-100 ${index === activeTab ? 'active' : ''}`"
                 :key="index"
